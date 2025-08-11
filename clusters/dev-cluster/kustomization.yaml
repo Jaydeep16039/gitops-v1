@@ -4,8 +4,6 @@ kind: Kustomization
 resources:
   - ../../infrastructure/helm-repos/cloudnativepg-repo.yaml
   - ../../infrastructure/helm-repos/prometheus-repo.yaml
-  
-  - ./monitoring-kustomizations.yaml
 
   - ../../secrets
 
