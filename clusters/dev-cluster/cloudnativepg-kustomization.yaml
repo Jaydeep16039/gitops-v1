@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: ./apps/base/postgres-cluster
+  path: ../../apps/base/postgres-cluster
   prune: true
   dependsOn:
     - name: monitoring
