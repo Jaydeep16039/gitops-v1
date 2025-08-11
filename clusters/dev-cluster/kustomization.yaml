@@ -13,6 +13,4 @@ resources:
 
   - ../../apps/overlays/dev/hello-world
 
-  - ../../notifications/slack
-
   - ../../apps/overlays/dev/phoenix-app
