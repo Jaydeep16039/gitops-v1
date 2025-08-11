@@ -5,6 +5,8 @@ resources:
   - ../../infrastructure/helm-repos/cloudnativepg-repo.yaml
   - ../../infrastructure/helm-repos/prometheus-repo.yaml
 
+  - ../../apps/base/monitoring
+
   - ../../secrets
 
   - ../../apps/base/cloudnativepg
@@ -12,3 +14,4 @@ resources:
 
 
   - ../../apps/overlays/dev/hello-world
+  
