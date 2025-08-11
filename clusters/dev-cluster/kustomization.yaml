@@ -1,0 +1,20 @@
+# clusters/dev-cluster/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../infrastructure/helm-repos/cloudnativepg-repo.yaml
+  - ../../infrastructure/helm-repos/prometheus-repo.yaml
+  
+  - ./monitoring-kustomizations.yaml
+
+  - ../../secrets
+
+  - ../../apps/base/cloudnativepg
+  -  ../../apps/base/postgres-cluster
+
+
+  - ../../apps/overlays/dev/hello-world
+
+  - ../../notifications/slack
+
+  - ../../apps/overlays/dev/phoenix-app
