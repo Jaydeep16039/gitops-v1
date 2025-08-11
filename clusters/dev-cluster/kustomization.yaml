@@ -13,4 +13,3 @@ resources:
 
   - ../../apps/overlays/dev/hello-world
 
-  - ../../apps/overlays/dev/phoenix-app
